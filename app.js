@@ -53,8 +53,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
+  let output=sum(a,b)[0]; 
+  let noor=sum(output,c)[0];
+  let output2=multiply(a,b)[0];
+  let noor2=multiply (output2,c)[0];
+  console.log(output);
+  return [noor,noor2,`${a} and ${b} and ${c} sum to ${noor}.`, `The product of ${a} and ${b} and ${c} is ${noor2}.`]
+  
   //eslint-disable-line
 }
+testSumAndMultiply(4,7,5);
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
